@@ -44,7 +44,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="min-h-screen pt-20 bg-white text-slate-900">
+    <div className="min-h-screen pt-14 sm:pt-16 bg-white text-slate-900">
       
       {/* Hero Header */}
       <section className="relative overflow-hidden pt-8 pb-12 sm:pt-10 sm:pb-16 bg-slate-950 text-white border-b border-slate-200">

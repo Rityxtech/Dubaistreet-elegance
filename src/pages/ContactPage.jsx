@@ -38,7 +38,7 @@ export default function ContactPage() {
   const whatsappInquiryUrl = `https://wa.me/447700900077?text=Hello%20Dubai%20Street%20Baron.%20I%20would%20like%20to%20schedule%20an%20appointment%20or%20inquire%20about%20${encodeURIComponent(formData.inquiryType)}.%20Name:%20${encodeURIComponent(formData.fullName || 'Client')}.`;
 
   return (
-    <div className="min-h-screen pt-20 bg-white text-slate-900">
+    <div className="min-h-screen pt-14 sm:pt-16 bg-white text-slate-900">
       
       {/* Hero Header */}
       <section className="relative overflow-hidden pt-8 pb-12 sm:pt-10 sm:pb-16 bg-slate-950 text-white border-b border-slate-200">

@@ -72,43 +72,43 @@ export default function Navbar() {
             : 'bg-white/95 backdrop-blur-md border-b border-slate-200/80'
         }`}
       >
-        <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 h-20 flex items-center justify-between gap-4">
+        <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 h-14 sm:h-16 flex items-center justify-between gap-4">
           
           {/* Brand Logo & Name */}
-          <Link to="/" className="flex items-center gap-3 shrink-0 group focus:outline-none">
-            <div className="relative flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 p-0.5 shadow-sm group-hover:scale-105 transition-transform duration-300 shrink-0">
+          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 shrink-0 group focus:outline-none">
+            <div className="relative flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 p-0.5 shadow-sm group-hover:scale-105 transition-transform duration-300 shrink-0">
               <img 
                 src="/dubailogo.png" 
                 alt="Dubai Street Baron Logo" 
-                className="w-full h-full object-cover rounded-[10px] bg-slate-950" 
+                className="w-full h-full object-cover rounded-[6px] sm:rounded-[9px] bg-slate-950" 
               />
-              <div className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-emerald-500 rounded-full border-2 border-white shadow-xs" />
+              <div className="absolute -top-0.5 -right-0.5 w-2 h-2 sm:w-2.5 sm:h-2.5 bg-emerald-500 rounded-full border-2 border-white shadow-xs" />
             </div>
             
             <div className="flex flex-col whitespace-nowrap">
-              <div className="flex items-center gap-2">
-                <span className="text-base sm:text-lg font-extrabold tracking-tight text-slate-950 leading-tight">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="text-sm sm:text-base font-extrabold tracking-tight text-slate-950 leading-tight">
                   Dubai Street Baron
                 </span>
-                <span className="hidden sm:inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-300/80">
+                <span className="hidden sm:inline-block px-1.5 py-0.5 rounded text-[9px] sm:text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-300/80">
                   EST. DUBAI
                 </span>
               </div>
-              <span className="text-[11px] font-medium text-slate-500 tracking-tight hidden sm:block">
+              <span className="text-[10px] sm:text-[11px] font-medium text-slate-500 tracking-tight hidden sm:block">
                 Banknote Conservation & Chemical Solutions
               </span>
             </div>
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-2 shrink-0">
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
               return (
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`relative px-3 xl:px-4 py-2 text-xs xl:text-sm font-bold whitespace-nowrap rounded-lg transition-all duration-200 shrink-0 ${
+                  className={`relative px-2.5 xl:px-3.5 py-1.5 text-xs xl:text-sm font-bold whitespace-nowrap rounded-lg transition-all duration-200 shrink-0 ${
                     isActive
                       ? 'text-amber-800 bg-amber-50/80'
                       : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70'
@@ -116,7 +116,7 @@ export default function Navbar() {
                 >
                   {link.name}
                   {isActive && (
-                    <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-gradient-to-r from-amber-500 to-amber-700 rounded-full" />
+                    <span className="absolute bottom-0 left-2.5 right-2.5 h-0.5 bg-gradient-to-r from-amber-500 to-amber-700 rounded-full" />
                   )}
                 </Link>
               );
@@ -128,7 +128,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`p-2.5 rounded-xl border transition-all duration-200 focus:outline-none shrink-0 ${
+              className={`p-2 rounded-lg sm:rounded-xl border transition-all duration-200 focus:outline-none shrink-0 ${
                 mobileMenuOpen
                   ? 'bg-amber-50 border-amber-300 text-amber-900 shadow-xs'
                   : 'bg-slate-100 border-slate-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200'
@@ -145,11 +145,11 @@ export default function Navbar() {
 
       {/* Mobile Left Sidebar Drawer (< 1024px) */}
       <div
-        className={`fixed inset-x-0 top-20 bottom-0 z-40 lg:hidden transition-all duration-300 ${
+        className={`fixed inset-x-0 top-14 sm:top-16 bottom-0 z-40 lg:hidden transition-all duration-300 ${
           mobileMenuOpen ? 'pointer-events-auto visible' : 'pointer-events-none invisible'
         }`}
       >
-        {/* Backdrop: starts strictly below the header (top-20) */}
+        {/* Backdrop: starts strictly below the header (top-14 / top-16) */}
         <div 
           className={`absolute inset-0 bg-slate-950/35 backdrop-blur-[2px] transition-opacity duration-300 ease-in-out ${
             mobileMenuOpen ? 'opacity-100' : 'opacity-0'

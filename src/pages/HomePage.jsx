@@ -129,7 +129,7 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="relative min-h-screen pt-20 bg-white text-slate-900">
+    <div className="relative min-h-screen pt-14 sm:pt-16 bg-white text-slate-900">
       
       {/* FULL-WIDTH HERO CAROUSEL */}
       <section 
