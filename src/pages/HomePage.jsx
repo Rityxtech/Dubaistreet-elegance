@@ -80,6 +80,8 @@ export default function HomePage() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
 
   useEffect(() => {
     if (isPaused) return;
@@ -95,6 +97,23 @@ export default function HomePage() {
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 50) {
+      nextSlide();
+    }
+    if (touchEndX - touchStartX > 50) {
+      prevSlide();
+    }
   };
 
   const featuredProducts = [
@@ -136,6 +155,9 @@ export default function HomePage() {
         className="relative w-full min-h-[380px] sm:min-h-[420px] lg:min-h-[460px] flex items-center bg-slate-950 text-white overflow-hidden"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         {/* Background Images Slider */}
         {slides.map((slide, index) => {
@@ -231,8 +253,8 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Bottom Pagination Indicators & Slider Controls Console */}
-        <div className="absolute bottom-4 left-0 right-0 z-30 pointer-events-none">
+        {/* Bottom Pagination Indicators & Slider Controls Console (Desktop/Tablet Only) */}
+        <div className="hidden sm:block absolute bottom-4 left-0 right-0 z-30 pointer-events-none">
           <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center justify-between">
             
             {/* Slide Navigation Dots / Bars */}
