@@ -150,9 +150,9 @@ export default function HomePage() {
   return (
     <div className="relative min-h-screen pt-14 sm:pt-16 bg-white text-slate-900">
       
-      {/* FULL-WIDTH HERO CAROUSEL - EXACT CONSISTENT HEIGHT */}
+      {/* FULL-WIDTH HERO CAROUSEL - COMPACT & CONSISTENT HEIGHT */}
       <section 
-        className="relative w-full h-[500px] sm:h-[430px] lg:h-[460px] flex items-center bg-slate-950 text-white overflow-hidden"
+        className="relative w-full h-[390px] sm:h-[430px] lg:h-[460px] flex items-center bg-slate-950 text-white overflow-hidden"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
         onTouchStart={handleTouchStart}
@@ -184,22 +184,22 @@ export default function HomePage() {
         })}
 
         {/* Foreground Content Area */}
-        <div className="relative z-20 w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-4 sm:py-6">
-          <div className="max-w-5xl space-y-3 sm:space-y-3.5">
+        <div className="relative z-20 w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-3 sm:py-6">
+          <div className="max-w-5xl space-y-2 sm:space-y-3.5">
             
             {/* Badge Container */}
-            <div className="h-7 sm:h-8 flex items-center">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-950/60 backdrop-blur-md border border-amber-400/50 text-amber-300 text-xs font-bold tracking-wide shadow-sm">
-                <span className="relative flex h-2 w-2">
+            <div className="h-6 sm:h-8 flex items-center">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-slate-950/60 backdrop-blur-md border border-amber-400/50 text-amber-300 text-[10px] sm:text-xs font-bold tracking-wide shadow-sm">
+                <span className="relative flex h-1.5 w-1.5 sm:h-2 sm:w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 sm:h-2 sm:w-2 bg-amber-500"></span>
                 </span>
                 <span>{slides[currentSlide].badge}</span>
               </div>
             </div>
 
             {/* Main Headline with Stable Line Height */}
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-extrabold tracking-tight text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] min-h-[58px] sm:min-h-[72px] lg:min-h-[84px] flex flex-wrap items-center">
+            <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-[40px] font-extrabold tracking-tight text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] min-h-[48px] sm:min-h-[72px] lg:min-h-[84px] flex flex-wrap items-center">
               <span>{slides[currentSlide].titleLead}</span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 drop-shadow-sm">
                 {slides[currentSlide].titleGold}
@@ -207,31 +207,31 @@ export default function HomePage() {
             </h1>
 
             {/* Subtext Container with Stable Height */}
-            <p className="text-xs sm:text-base lg:text-lg text-slate-100 max-w-3xl leading-relaxed font-medium drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)] min-h-[38px] sm:min-h-[48px] flex items-center">
+            <p className="text-[11px] sm:text-base lg:text-lg text-slate-100 max-w-3xl leading-relaxed font-medium drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)] min-h-[30px] sm:min-h-[48px] flex items-center">
               {slides[currentSlide].subtext}
             </p>
 
             {/* 2 Polished Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-4 pt-1">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-4 pt-1">
               
               {/* Primary Action Button: WhatsApp */}
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-11 sm:h-12 px-6 sm:px-7 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-sm sm:text-base tracking-wide shadow-lg shadow-black/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2.5 shrink-0"
+                className="h-10 sm:h-12 px-4 sm:px-7 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs sm:text-base tracking-wide shadow-lg shadow-black/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 sm:gap-2.5 shrink-0"
               >
-                <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-slate-950 shrink-0" />
+                <MessageSquare className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-slate-950 shrink-0" />
                 <span>Chat with Specialist on WhatsApp</span>
               </a>
 
               {/* Secondary Action Button: Shop */}
               <Link
                 to="/shop"
-                className="h-11 sm:h-12 px-6 sm:px-7 rounded-xl bg-slate-950/50 hover:bg-slate-900/70 text-white border border-white/40 hover:border-white/70 backdrop-blur-md font-bold text-sm sm:text-base tracking-wide shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 shrink-0 group"
+                className="h-10 sm:h-12 px-4 sm:px-7 rounded-xl bg-slate-950/50 hover:bg-slate-900/70 text-white border border-white/40 hover:border-white/70 backdrop-blur-md font-bold text-xs sm:text-base tracking-wide shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 shrink-0 group"
               >
                 <span>Explore Products & Solutions</span>
-                <ArrowRight className="w-4 h-4 text-amber-400 group-hover:translate-x-1 transition-transform shrink-0" />
+                <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 group-hover:translate-x-1 transition-transform shrink-0" />
               </Link>
 
             </div>
