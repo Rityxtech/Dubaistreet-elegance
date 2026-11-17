@@ -27,10 +27,10 @@ export default function HomePage() {
     {
       id: 1,
       image: '/images/banknote-conservation-inspection.png',
-      badge: 'Genuine Banknote Conservation & Technology',
-      titleLead: 'Professional Banknote Conservation ',
+      badge: 'Genuine Currency Conservation',
+      titleLead: 'Banknote Conservation ',
       titleGold: '& Cleaning Solutions',
-      subtext: 'Preserving genuine currency with advanced industrial equipment, certified chemical formulations, and unmatched technical expertise.',
+      subtext: 'Preserving genuine currency with advanced industrial equipment and certified chemical formulations.',
       trustPoints: [
         { label: 'Certified Formulations', icon: ShieldCheck },
         { label: 'Preserves Security Features', icon: Lock },
@@ -40,10 +40,10 @@ export default function HomePage() {
     {
       id: 2,
       image: '/images/caluanie-muelear-oxidize.png',
-      badge: 'Certified Chemical Solutions & Industrial Supply',
-      titleLead: 'SSD Chemical Solutions & ',
-      titleGold: 'Caluanie Muelear Oxidize',
-      subtext: 'High-purity industrial chemical supply, activation powders, and neutralizing rinses with discreet worldwide express dispatch.',
+      badge: 'Certified Chemical Solutions',
+      titleLead: 'SSD Chemical Solutions ',
+      titleGold: '& Caluanie Oxidize',
+      subtext: 'High-purity industrial chemical supply, activation powders, and neutralizing rinses with verified density.',
       trustPoints: [
         { label: '99.8% Certified Purity', icon: FlaskConical },
         { label: 'Factory-Sealed Canisters', icon: Package },
@@ -53,10 +53,10 @@ export default function HomePage() {
     {
       id: 3,
       image: '/images/dubai-street-baron-laboratory.png',
-      badge: 'Comprehensive Laboratory & Industrial Inventory',
-      titleLead: 'Advanced Chemical Extraction ',
+      badge: 'Laboratory Systems & Supply',
+      titleLead: 'Specialist Extraction ',
       titleGold: '& Laboratory Systems',
-      subtext: 'Complete operational systems including ultrasonic tanks, specialized extraction catalysts, and high-speed multi-currency counters.',
+      subtext: 'Complete operational systems with ultrasonic tanks, specialized extraction catalysts, and precision counters.',
       trustPoints: [
         { label: 'Full Laboratory Kits', icon: Award },
         { label: 'Anti-Breeze Extraction', icon: FlaskConical },
@@ -66,10 +66,10 @@ export default function HomePage() {
     {
       id: 4,
       image: '/images/banknote-counter-machine.png',
-      badge: 'Commercial & Industrial Equipment',
-      titleLead: 'High-Speed Automated Banknote ',
-      titleGold: 'Counter & Sorting Systems',
-      subtext: 'Commercial counting and multi-stage verification machinery designed for genuine legal tender post-cleaning restoration.',
+      badge: 'Commercial Machinery Supply',
+      titleLead: 'Automated Banknote ',
+      titleGold: 'Counting Machinery',
+      subtext: 'Commercial counting, sorting, and multi-stage verification machinery designed for genuine legal tender.',
       trustPoints: [
         { label: 'Up to 50K Notes/Hour', icon: Cpu },
         { label: 'UV & Magnetic Detection', icon: ShieldCheck },
@@ -150,9 +150,9 @@ export default function HomePage() {
   return (
     <div className="relative min-h-screen pt-14 sm:pt-16 bg-white text-slate-900">
       
-      {/* FULL-WIDTH HERO CAROUSEL */}
+      {/* FULL-WIDTH HERO CAROUSEL - EXACT CONSISTENT HEIGHT */}
       <section 
-        className="relative w-full min-h-[380px] sm:min-h-[420px] lg:min-h-[460px] flex items-center bg-slate-950 text-white overflow-hidden"
+        className="relative w-full h-[500px] sm:h-[430px] lg:h-[460px] flex items-center bg-slate-950 text-white overflow-hidden"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
         onTouchStart={handleTouchStart}
@@ -184,33 +184,35 @@ export default function HomePage() {
         })}
 
         {/* Foreground Content Area */}
-        <div className="relative z-20 w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-8 sm:py-10 lg:py-12">
-          <div className="max-w-5xl space-y-3.5 sm:space-y-4">
+        <div className="relative z-20 w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-4 sm:py-6">
+          <div className="max-w-5xl space-y-3 sm:space-y-3.5">
             
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-950/60 backdrop-blur-md border border-amber-400/50 text-amber-300 text-xs font-bold tracking-wide shadow-sm">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
-              </span>
-              <span>{slides[currentSlide].badge}</span>
+            {/* Badge Container */}
+            <div className="h-7 sm:h-8 flex items-center">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-950/60 backdrop-blur-md border border-amber-400/50 text-amber-300 text-xs font-bold tracking-wide shadow-sm">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+                </span>
+                <span>{slides[currentSlide].badge}</span>
+              </div>
             </div>
 
-            {/* Main Headline */}
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-extrabold tracking-tight text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+            {/* Main Headline with Stable Line Height */}
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-extrabold tracking-tight text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] min-h-[58px] sm:min-h-[72px] lg:min-h-[84px] flex flex-wrap items-center">
               <span>{slides[currentSlide].titleLead}</span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 drop-shadow-sm">
                 {slides[currentSlide].titleGold}
               </span>
             </h1>
 
-            {/* Subtext */}
-            <p className="text-sm sm:text-base lg:text-lg text-slate-100 max-w-3xl leading-relaxed font-medium drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
+            {/* Subtext Container with Stable Height */}
+            <p className="text-xs sm:text-base lg:text-lg text-slate-100 max-w-3xl leading-relaxed font-medium drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)] min-h-[38px] sm:min-h-[48px] flex items-center">
               {slides[currentSlide].subtext}
             </p>
 
             {/* 2 Polished Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-1">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-4 pt-1">
               
               {/* Primary Action Button: WhatsApp */}
               <a
