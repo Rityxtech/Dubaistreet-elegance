@@ -307,41 +307,63 @@ export default function HomePage() {
 
       </section>
 
-      {/* STATS / CREDIBILITY BANNER */}
-      <section className="border-b border-slate-200 bg-slate-50">
-        <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-8 sm:py-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      {/* STATS / CREDIBILITY BANNER - Sleek Unified Strip on Mobile, 4 Cards on Desktop */}
+      <section className="border-b border-slate-200/80 bg-slate-50">
+        <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-3.5 sm:py-10">
+          
+          {/* Mobile: 1 Compact Sleek Divided Card | Desktop: 4 Separate Cards */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 rounded-xl sm:rounded-2xl bg-white border border-slate-200/90 divide-x divide-y sm:divide-y-0 sm:divide-x-0 divide-slate-100 sm:border-none sm:bg-transparent sm:gap-6 shadow-xs sm:shadow-none overflow-hidden">
             
-            <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block mb-1">
+            {/* Stat 1 */}
+            <div className="p-3 sm:p-5 sm:rounded-2xl sm:bg-white sm:border sm:border-slate-200 sm:shadow-xs flex flex-col justify-center">
+              <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-700 sm:text-slate-500 block">
                 Field Experience
               </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-mono tracking-tight">15+ Years</div>
-              <p className="text-xs text-slate-500 mt-0.5">Specialized banknote conservation</p>
+              <div className="text-base sm:text-3xl font-black text-slate-950 font-mono tracking-tight mt-0.5 sm:mt-1">
+                15+ Years
+              </div>
+              <p className="text-[10px] sm:text-xs text-slate-500 mt-0.5 truncate sm:whitespace-normal">
+                Specialized banknote conservation
+              </p>
             </div>
 
-            <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block mb-1">
+            {/* Stat 2 */}
+            <div className="p-3 sm:p-5 sm:rounded-2xl sm:bg-white sm:border sm:border-slate-200 sm:shadow-xs flex flex-col justify-center">
+              <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-700 sm:text-slate-500 block">
                 Formulation Purity
               </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-mono tracking-tight">99.8%</div>
-              <p className="text-xs text-slate-500 mt-0.5">Certified chemical formulations</p>
+              <div className="text-base sm:text-3xl font-black text-slate-950 font-mono tracking-tight mt-0.5 sm:mt-1">
+                99.8%
+              </div>
+              <p className="text-[10px] sm:text-xs text-slate-500 mt-0.5 truncate sm:whitespace-normal">
+                Certified chemical formulations
+              </p>
             </div>
 
-            <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block mb-1">
+            {/* Stat 3 */}
+            <div className="p-3 sm:p-5 sm:rounded-2xl sm:bg-white sm:border sm:border-slate-200 sm:shadow-xs flex flex-col justify-center">
+              <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-700 sm:text-slate-500 block">
                 Machine Speed
               </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-mono tracking-tight">50K / Hr</div>
-              <p className="text-xs text-slate-500 mt-0.5">Ultrasonic commercial throughput</p>
+              <div className="text-base sm:text-3xl font-black text-slate-950 font-mono tracking-tight mt-0.5 sm:mt-1">
+                50K / Hr
+              </div>
+              <p className="text-[10px] sm:text-xs text-slate-500 mt-0.5 truncate sm:whitespace-normal">
+                Ultrasonic commercial throughput
+              </p>
             </div>
 
-            <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block mb-1">
+            {/* Stat 4 */}
+            <div className="p-3 sm:p-5 sm:rounded-2xl sm:bg-white sm:border sm:border-slate-200 sm:shadow-xs flex flex-col justify-center">
+              <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-700 sm:text-slate-500 block">
                 Dubai Presence
               </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-mono tracking-tight">In-Person</div>
-              <p className="text-xs text-slate-500 mt-0.5">Consultations by appointment</p>
+              <div className="text-base sm:text-3xl font-black text-slate-950 font-mono tracking-tight mt-0.5 sm:mt-1">
+                In-Person
+              </div>
+              <p className="text-[10px] sm:text-xs text-slate-500 mt-0.5 truncate sm:whitespace-normal">
+                Consultations by appointment
+              </p>
             </div>
 
           </div>
