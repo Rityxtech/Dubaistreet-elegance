@@ -62,11 +62,11 @@ export default function Footer() {
           {/* Brand Column (2 cols) */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 to-amber-700 p-0.5 flex items-center justify-center shadow-md overflow-hidden shrink-0">
+              <div className="w-11 h-11 rounded-full bg-gradient-to-br from-amber-400 to-amber-700 p-0.5 flex items-center justify-center shadow-md overflow-hidden shrink-0">
                 <img 
                   src="/dubailogo.png" 
                   alt="Dubai Street Baron Logo" 
-                  className="w-full h-full object-cover rounded-[10px] bg-slate-950" 
+                  className="w-full h-full object-cover rounded-full bg-slate-950" 
                 />
               </div>
               <span className="text-xl font-extrabold text-white tracking-tight">

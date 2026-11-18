@@ -77,13 +77,12 @@ export default function Navbar() {
           
           {/* Brand Logo & Name */}
           <Link to="/" className="flex items-center gap-2.5 sm:gap-3 shrink-0 group focus:outline-none">
-            <div className="relative flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 p-0.5 shadow-sm group-hover:scale-105 transition-transform duration-300 shrink-0">
+            <div className="relative flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 p-0.5 shadow-sm group-hover:scale-105 transition-transform duration-300 shrink-0">
               <img 
                 src="/dubailogo.png" 
                 alt="Dubai Street Baron Logo" 
-                className="w-full h-full object-cover rounded-[6px] sm:rounded-[9px] bg-slate-950" 
+                className="w-full h-full object-cover rounded-full bg-slate-950" 
               />
-              <div className="absolute -top-0.5 -right-0.5 w-2 h-2 sm:w-2.5 sm:h-2.5 bg-emerald-500 rounded-full border-2 border-white shadow-xs" />
             </div>
             
             <div className="flex flex-col whitespace-nowrap">
