@@ -158,12 +158,14 @@ export default function Navbar() {
           aria-hidden="true"
         />
 
-        {/* Left Sidebar Panel (Sleek Translucent Glassmorphism) */}
+        {/* Left Sidebar Panel (Sleek Translucent Glassmorphism with Luxury Gold Gradient Right Border) */}
         <aside 
-          className={`absolute top-0 bottom-0 left-0 w-[82vw] max-w-[320px] sm:w-[340px] bg-white/80 backdrop-blur-2xl border-r border-slate-200/70 shadow-2xl shadow-slate-900/15 flex flex-col justify-between transition-transform duration-300 ease-out z-10 ${
+          className={`absolute top-0 bottom-0 left-0 w-[82vw] max-w-[320px] sm:w-[340px] bg-white/85 backdrop-blur-2xl shadow-2xl shadow-slate-900/20 flex flex-col justify-between transition-transform duration-300 ease-out z-10 ${
             mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
         >
+          {/* Right-Side Gold Gradient Border matching site theme */}
+          <div className="absolute top-0 bottom-0 right-0 w-[2px] bg-gradient-to-b from-amber-300 via-amber-500 to-yellow-600 shadow-[1px_0_10px_rgba(245,158,11,0.35)] pointer-events-none z-20" />
           {/* Navigation Links List */}
           <nav className="flex-1 overflow-y-auto px-3.5 py-5 space-y-1.5 overscroll-contain">
             <div className="px-3 pb-2 text-[10px] font-extrabold uppercase tracking-wider text-slate-400">
