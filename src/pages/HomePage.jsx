@@ -176,20 +176,20 @@ export default function HomePage() {
                   isActive ? 'scale-105' : 'scale-100'
                 }`}
               />
-              {/* Directional contrast scrim: rich vertical gradient on mobile for text clarity; left-to-right on desktop */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/70 to-slate-950/30 sm:bg-gradient-to-r sm:from-slate-950/75 sm:via-slate-950/30 sm:to-transparent" />
-              <div className="absolute inset-0 bg-slate-950/20 sm:hidden" />
+              {/* Full-bleed photography scrim: smooth edge-to-edge tint so image is fully visible across entire screen */}
+              <div className="absolute inset-0 bg-slate-950/45" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/35 to-transparent sm:bg-gradient-to-r sm:from-slate-950/85 sm:via-slate-950/40 sm:to-transparent" />
             </div>
           );
         })}
 
-        {/* Foreground Content Area with Mobile Glassmorphism Card Pattern */}
+        {/* Foreground Content Area - Full-bleed natural text layout (No boxes, no cards) */}
         <div className="relative z-20 w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-3 sm:py-6">
-          <div className="max-w-2xl sm:max-w-5xl rounded-2xl sm:rounded-none bg-slate-950/65 sm:bg-transparent backdrop-blur-md sm:backdrop-blur-none p-4 sm:p-0 border border-white/10 sm:border-none shadow-2xl sm:shadow-none space-y-2.5 sm:space-y-3.5">
+          <div className="max-w-xl sm:max-w-4xl space-y-2.5 sm:space-y-4">
             
             {/* Badge Container */}
             <div className="flex items-center">
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1 rounded-full bg-amber-400/15 border border-amber-400/40 text-amber-300 text-[10px] sm:text-xs font-bold tracking-wide shadow-sm">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1 rounded-full bg-slate-950/60 border border-amber-400/40 text-amber-300 text-[10px] sm:text-xs font-bold tracking-wide backdrop-blur-sm shadow-sm">
                 <span className="relative flex h-1.5 w-1.5 sm:h-2 sm:w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-1.5 w-1.5 sm:h-2 sm:w-2 bg-emerald-500"></span>
@@ -199,27 +199,27 @@ export default function HomePage() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-[40px] font-extrabold tracking-tight text-white leading-tight drop-shadow-md min-h-[48px] sm:min-h-[72px] lg:min-h-[84px] flex flex-wrap items-center">
-              <span className="block sm:inline">{slides[currentSlide].titleLead}</span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-extrabold tracking-tight text-white leading-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.85)]">
+              <span>{slides[currentSlide].titleLead}</span>{' '}
+              <span className="text-amber-400">
                 {slides[currentSlide].titleGold}
               </span>
             </h1>
 
             {/* Subtext Container */}
-            <p className="text-xs sm:text-base lg:text-lg text-slate-200 max-w-3xl leading-relaxed font-normal drop-shadow-sm min-h-[32px] sm:min-h-[48px] flex items-center">
+            <p className="text-xs sm:text-base lg:text-lg text-slate-200 max-w-2xl leading-relaxed font-normal drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">
               {slides[currentSlide].subtext}
             </p>
 
-            {/* 2 Polished Action Buttons: 2-Column Grid on Mobile, Flex on Desktop */}
-            <div className="grid grid-cols-2 sm:flex sm:items-center gap-2.5 sm:gap-4 pt-1">
+            {/* Action Buttons: Clean side-by-side buttons directly on the layout */}
+            <div className="flex items-center gap-2.5 sm:gap-4 pt-1 sm:pt-2">
               
               {/* Primary Action Button: WhatsApp */}
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 sm:h-12 px-2.5 sm:px-7 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs sm:text-base tracking-wide shadow-lg shadow-black/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-1.5 sm:gap-2.5 text-center"
+                className="h-10 sm:h-12 px-3.5 sm:px-7 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs sm:text-base tracking-wide shadow-lg shadow-black/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-1.5 sm:gap-2.5 text-center"
               >
                 <MessageSquare className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-slate-950 shrink-0" />
                 <span className="sm:hidden font-bold">WhatsApp Desk</span>
@@ -229,7 +229,7 @@ export default function HomePage() {
               {/* Secondary Action Button: Shop */}
               <Link
                 to="/shop"
-                className="h-10 sm:h-12 px-2.5 sm:px-7 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md font-bold text-xs sm:text-base tracking-wide shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-1.5 sm:gap-2 text-center group"
+                className="h-10 sm:h-12 px-3.5 sm:px-7 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-sm font-semibold text-xs sm:text-base tracking-wide shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-1.5 sm:gap-2 text-center group"
               >
                 <span className="sm:hidden">Explore Shop</span>
                 <span className="hidden sm:inline">Explore Products & Solutions</span>
