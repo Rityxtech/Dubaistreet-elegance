@@ -152,7 +152,7 @@ export default function HomePage() {
       
       {/* FULL-WIDTH HERO CAROUSEL - COMPACT & CONSISTENT HEIGHT */}
       <section 
-        className="relative w-full h-[390px] sm:h-[430px] lg:h-[460px] flex items-center bg-slate-950 text-white overflow-hidden"
+        className="relative w-full h-[410px] sm:h-[430px] lg:h-[460px] flex items-center bg-slate-950 text-white overflow-hidden"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
         onTouchStart={handleTouchStart}
@@ -176,61 +176,63 @@ export default function HomePage() {
                   isActive ? 'scale-105' : 'scale-100'
                 }`}
               />
-              {/* Luminous, photography-forward gradient scrim */}
-              <div className="absolute inset-0 bg-gradient-to-r from-slate-950/65 via-slate-950/25 to-transparent" />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/35 via-transparent to-transparent" />
+              {/* Directional contrast scrim: rich vertical gradient on mobile for text clarity; left-to-right on desktop */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/70 to-slate-950/30 sm:bg-gradient-to-r sm:from-slate-950/75 sm:via-slate-950/30 sm:to-transparent" />
+              <div className="absolute inset-0 bg-slate-950/20 sm:hidden" />
             </div>
           );
         })}
 
-        {/* Foreground Content Area */}
+        {/* Foreground Content Area with Mobile Glassmorphism Card Pattern */}
         <div className="relative z-20 w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-3 sm:py-6">
-          <div className="max-w-5xl space-y-2 sm:space-y-3.5">
+          <div className="max-w-2xl sm:max-w-5xl rounded-2xl sm:rounded-none bg-slate-950/65 sm:bg-transparent backdrop-blur-md sm:backdrop-blur-none p-4 sm:p-0 border border-white/10 sm:border-none shadow-2xl sm:shadow-none space-y-2.5 sm:space-y-3.5">
             
             {/* Badge Container */}
-            <div className="h-6 sm:h-8 flex items-center">
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-slate-950/60 backdrop-blur-md border border-amber-400/50 text-amber-300 text-[10px] sm:text-xs font-bold tracking-wide shadow-sm">
+            <div className="flex items-center">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1 rounded-full bg-amber-400/15 border border-amber-400/40 text-amber-300 text-[10px] sm:text-xs font-bold tracking-wide shadow-sm">
                 <span className="relative flex h-1.5 w-1.5 sm:h-2 sm:w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 sm:h-2 sm:w-2 bg-amber-500"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 sm:h-2 sm:w-2 bg-emerald-500"></span>
                 </span>
                 <span>{slides[currentSlide].badge}</span>
               </div>
             </div>
 
-            {/* Main Headline with Stable Line Height */}
-            <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-[40px] font-extrabold tracking-tight text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] min-h-[48px] sm:min-h-[72px] lg:min-h-[84px] flex flex-wrap items-center">
-              <span>{slides[currentSlide].titleLead}</span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 drop-shadow-sm">
+            {/* Main Headline */}
+            <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-[40px] font-extrabold tracking-tight text-white leading-tight drop-shadow-md min-h-[48px] sm:min-h-[72px] lg:min-h-[84px] flex flex-wrap items-center">
+              <span className="block sm:inline">{slides[currentSlide].titleLead}</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500">
                 {slides[currentSlide].titleGold}
               </span>
             </h1>
 
-            {/* Subtext Container with Stable Height */}
-            <p className="text-[11px] sm:text-base lg:text-lg text-slate-100 max-w-3xl leading-relaxed font-medium drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)] min-h-[30px] sm:min-h-[48px] flex items-center">
+            {/* Subtext Container */}
+            <p className="text-xs sm:text-base lg:text-lg text-slate-200 max-w-3xl leading-relaxed font-normal drop-shadow-sm min-h-[32px] sm:min-h-[48px] flex items-center">
               {slides[currentSlide].subtext}
             </p>
 
-            {/* 2 Polished Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-4 pt-1">
+            {/* 2 Polished Action Buttons: 2-Column Grid on Mobile, Flex on Desktop */}
+            <div className="grid grid-cols-2 sm:flex sm:items-center gap-2.5 sm:gap-4 pt-1">
               
               {/* Primary Action Button: WhatsApp */}
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 sm:h-12 px-4 sm:px-7 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs sm:text-base tracking-wide shadow-lg shadow-black/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 sm:gap-2.5 shrink-0"
+                className="h-10 sm:h-12 px-2.5 sm:px-7 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs sm:text-base tracking-wide shadow-lg shadow-black/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-1.5 sm:gap-2.5 text-center"
               >
                 <MessageSquare className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-slate-950 shrink-0" />
-                <span>Chat with Specialist on WhatsApp</span>
+                <span className="sm:hidden font-bold">WhatsApp Desk</span>
+                <span className="hidden sm:inline">Chat with Specialist on WhatsApp</span>
               </a>
 
               {/* Secondary Action Button: Shop */}
               <Link
                 to="/shop"
-                className="h-10 sm:h-12 px-4 sm:px-7 rounded-xl bg-slate-950/50 hover:bg-slate-900/70 text-white border border-white/40 hover:border-white/70 backdrop-blur-md font-bold text-xs sm:text-base tracking-wide shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 shrink-0 group"
+                className="h-10 sm:h-12 px-2.5 sm:px-7 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md font-bold text-xs sm:text-base tracking-wide shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-1.5 sm:gap-2 text-center group"
               >
-                <span>Explore Products & Solutions</span>
+                <span className="sm:hidden">Explore Shop</span>
+                <span className="hidden sm:inline">Explore Products & Solutions</span>
                 <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 group-hover:translate-x-1 transition-transform shrink-0" />
               </Link>
 
