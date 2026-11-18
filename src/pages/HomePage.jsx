@@ -322,8 +322,8 @@ export default function HomePage() {
               <div className="text-base sm:text-3xl font-black text-slate-950 font-mono tracking-tight mt-0.5 sm:mt-1">
                 15+ Years
               </div>
-              <p className="text-[10px] sm:text-xs text-slate-500 mt-0.5 truncate sm:whitespace-normal">
-                Specialized banknote conservation
+              <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5 leading-snug min-h-[28px] sm:min-h-0">
+                Banknote & currency conservation
               </p>
             </div>
 
@@ -335,8 +335,8 @@ export default function HomePage() {
               <div className="text-base sm:text-3xl font-black text-slate-950 font-mono tracking-tight mt-0.5 sm:mt-1">
                 99.8%
               </div>
-              <p className="text-[10px] sm:text-xs text-slate-500 mt-0.5 truncate sm:whitespace-normal">
-                Certified chemical formulations
+              <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5 leading-snug min-h-[28px] sm:min-h-0">
+                Certified chemical solutions
               </p>
             </div>
 
@@ -348,7 +348,7 @@ export default function HomePage() {
               <div className="text-base sm:text-3xl font-black text-slate-950 font-mono tracking-tight mt-0.5 sm:mt-1">
                 50K / Hr
               </div>
-              <p className="text-[10px] sm:text-xs text-slate-500 mt-0.5 truncate sm:whitespace-normal">
+              <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5 leading-snug min-h-[28px] sm:min-h-0">
                 Ultrasonic commercial throughput
               </p>
             </div>
@@ -361,7 +361,7 @@ export default function HomePage() {
               <div className="text-base sm:text-3xl font-black text-slate-950 font-mono tracking-tight mt-0.5 sm:mt-1">
                 In-Person
               </div>
-              <p className="text-[10px] sm:text-xs text-slate-500 mt-0.5 truncate sm:whitespace-normal">
+              <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5 leading-snug min-h-[28px] sm:min-h-0">
                 Consultations by appointment
               </p>
             </div>
