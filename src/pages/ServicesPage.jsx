@@ -90,7 +90,7 @@ export default function ServicesPage() {
       title: '6. Dedicated Technical Support & Field Assistance',
       subtitle: 'Ongoing operational support and on-site technician dispatch',
       image: '/images/ssd-extraction-powder.png',
-      description: 'From initial inquiry to project completion, our technical support team is available 24/7 via WhatsApp and phone. For high-volume clients, we offer on-site technician dispatch to assist with machine setup, chemical calibration, and staff operation.',
+      description: 'From initial inquiry to project completion, our technical support team is available 24/7 via direct client messaging and phone. For high-volume clients, we offer on-site technician dispatch to assist with machine setup, chemical calibration, and staff operation.',
       benefits: [
         '24/7 direct encrypted messaging with senior technicians',
         'Step-by-step video guidance for machine setup and chemical mixing',
@@ -186,7 +186,7 @@ export default function ServicesPage() {
                     className="h-10 px-5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs tracking-wide shadow-sm flex items-center gap-2"
                   >
                     <MessageSquare className="w-4 h-4 text-slate-950" />
-                    <span>Inquire on WhatsApp</span>
+                    <span>Request Service Quotation</span>
                   </a>
 
                   <Link

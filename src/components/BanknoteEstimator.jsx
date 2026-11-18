@@ -239,7 +239,7 @@ export default function BanknoteEstimator() {
           className="h-10 sm:h-11 px-5 sm:px-6 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs sm:text-sm tracking-wide shadow-md shadow-amber-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 shrink-0"
         >
           <MessageSquare className="w-4 h-4 text-slate-950 shrink-0" />
-          <span>Consult Technician on WhatsApp</span>
+          <span>Consult Technical Specialist</span>
         </a>
 
       </div>

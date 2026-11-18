@@ -91,7 +91,7 @@ export default function ContactPage() {
                     </div>
                     <h3 className="text-xl font-bold text-slate-900">Consultation Request Received</h3>
                     <p className="text-sm text-slate-600 max-w-md mx-auto">
-                      Thank you, <strong className="text-slate-900">{formData.fullName}</strong>. A Dubai Street Baron representative will contact you via WhatsApp and email to confirm your appointment or supply quotation.
+                      Thank you, <strong className="text-slate-900">{formData.fullName}</strong>. A Dubai Street Baron representative will contact you via direct channel and email to confirm your appointment or supply quotation.
                     </p>
                     <a
                       href={whatsappInquiryUrl}
@@ -100,7 +100,7 @@ export default function ContactPage() {
                       className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold text-xs tracking-wide shadow-md"
                     >
                       <MessageSquare className="w-4 h-4 text-slate-950" />
-                      <span>Speed Up Response via WhatsApp</span>
+                      <span>Direct Priority Channel</span>
                     </a>
                   </div>
                 ) : (
@@ -154,7 +154,7 @@ export default function ContactPage() {
 
                       <div>
                         <label className="text-xs font-bold text-slate-700 block mb-1.5">
-                          Phone / WhatsApp Number *
+                          Direct Mobile / Phone Number *
                         </label>
                         <input
                           type="tel"
@@ -236,7 +236,7 @@ export default function ContactPage() {
             {/* Right Column: Direct WhatsApp Card & Dubai Info (5 cols) */}
             <div className="lg:col-span-5 space-y-6">
               
-              {/* WhatsApp VIP Card */}
+              {/* Direct Desk Card */}
               <div className="p-6 sm:p-7 rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white border border-slate-800 shadow-xl space-y-4">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-xs font-bold">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
@@ -244,21 +244,21 @@ export default function ContactPage() {
                 </div>
 
                 <h3 className="text-xl font-bold tracking-tight">
-                  Connect Directly on WhatsApp
+                  Direct Specialist Desk
                 </h3>
 
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  For immediate consultation, video demonstration of cleaning machines, or same-day appointment confirmation in Dubai, chat directly with a senior technician.
+                  For immediate consultation, video demonstration of cleaning machines, or same-day appointment confirmation in Dubai, connect directly with a senior technician.
                 </p>
 
                 <a
                   href={whatsappInquiryUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full h-12 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-sm tracking-wide shadow-lg shadow-emerald-600/30 flex items-center justify-center gap-2.5 transition-all active:scale-[0.98]"
+                  className="w-full h-12 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-sm tracking-wide shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2.5 transition-all active:scale-[0.98]"
                 >
-                  <MessageSquare className="w-5 h-5 fill-white" />
-                  <span>Chat on WhatsApp Support</span>
+                  <MessageSquare className="w-5 h-5 text-slate-950" />
+                  <span>Connect with Client Desk</span>
                 </a>
               </div>
 

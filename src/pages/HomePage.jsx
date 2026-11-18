@@ -214,7 +214,7 @@ export default function HomePage() {
             {/* Action Buttons: Clean side-by-side buttons directly on the layout */}
             <div className="flex items-center gap-2.5 sm:gap-4 pt-1 sm:pt-2">
               
-              {/* Primary Action Button: WhatsApp */}
+              {/* Primary Action Button: Direct Technical Inquiry */}
               <a
                 href={whatsappUrl}
                 target="_blank"
@@ -222,8 +222,8 @@ export default function HomePage() {
                 className="h-10 sm:h-12 px-3.5 sm:px-7 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs sm:text-base tracking-wide shadow-lg shadow-black/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-1.5 sm:gap-2.5 text-center"
               >
                 <MessageSquare className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-slate-950 shrink-0" />
-                <span className="sm:hidden font-bold">WhatsApp Desk</span>
-                <span className="hidden sm:inline">Chat with Specialist on WhatsApp</span>
+                <span className="sm:hidden font-bold">Direct Inquiry</span>
+                <span className="hidden sm:inline">Direct Specialist Inquiry</span>
               </a>
 
               {/* Secondary Action Button: Shop */}
@@ -577,7 +577,7 @@ export default function HomePage() {
                     className="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs tracking-wide shadow-xs transition-all"
                   >
                     <MessageSquare className="w-3.5 h-3.5 text-slate-950" />
-                    <span>Inquire via WhatsApp</span>
+                    <span>Request Quotation</span>
                   </a>
                 </div>
               </div>
@@ -621,7 +621,7 @@ export default function HomePage() {
                 className="w-full sm:w-auto h-12 px-7 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md font-bold text-sm tracking-wide flex items-center justify-center gap-2 transition-all"
               >
                 <MessageSquare className="w-4 h-4 text-amber-400" />
-                <span>Chat on WhatsApp</span>
+                <span>Direct Client Desk</span>
               </a>
             </div>
 

@@ -259,7 +259,7 @@ export default function ShopPage() {
                     className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs tracking-wide shadow-sm hover:shadow-md transition-all active:scale-[0.98]"
                   >
                     <MessageSquare className="w-4 h-4 text-slate-950" />
-                    <span>Inquire / Order on WhatsApp</span>
+                    <span>Request Quotation & Order</span>
                   </a>
                 </div>
               </div>

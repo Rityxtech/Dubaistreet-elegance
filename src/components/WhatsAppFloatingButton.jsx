@@ -14,10 +14,10 @@ export default function WhatsAppFloatingButton() {
         }`}
       >
         <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-        <span>Dubai Street Baron &bull; Online Support</span>
+        <span>Dubai Street Baron &bull; Direct Client Desk</span>
       </div>
 
-      {/* Circular WhatsApp Support Widget */}
+      {/* Circular Direct Support Widget */}
       <a
         href={whatsappUrl}
         target="_blank"
@@ -25,8 +25,8 @@ export default function WhatsAppFloatingButton() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="relative w-14 h-14 sm:w-15 sm:h-15 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-xl shadow-emerald-600/35 hover:shadow-emerald-600/50 hover:scale-110 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-emerald-400/30 group"
-        aria-label="Chat with Dubai Street Baron on WhatsApp"
-        title="Chat with Dubai Street Baron on WhatsApp"
+        aria-label="Direct Specialist Support & Inquiry"
+        title="Direct Specialist Support & Inquiry"
       >
         <svg
           className="w-7 h-7 sm:w-8 sm:h-8 fill-white transition-transform duration-300 group-hover:scale-105"

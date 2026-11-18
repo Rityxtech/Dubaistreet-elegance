@@ -287,7 +287,7 @@ export default function AdvisoryPage() {
                     className="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold text-sm tracking-wide shadow-md shadow-amber-500/20"
                   >
                     <MessageSquare className="w-4 h-4 text-slate-950" />
-                    <span>Connect with Advisory Desk on WhatsApp</span>
+                    <span>Connect with Advisory Desk</span>
                   </a>
                   <Link
                     to="/contact"

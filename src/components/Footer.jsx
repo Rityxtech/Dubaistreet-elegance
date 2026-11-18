@@ -85,7 +85,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>Monday – Saturday: 09:00 – 18:00 GST &bull; 24/7 WhatsApp Support</span>
+                <span>Monday – Saturday: 09:00 – 18:00 GST &bull; 24/7 Direct Client Desk</span>
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@ export default function FaqAccordion() {
     },
     {
       q: 'How can I schedule an in-person meeting in Dubai?',
-      a: 'We welcome serious corporate clients and private collectors to meet our technical team in person. Simply submit an appointment request through our Contact page or message us directly via WhatsApp with your preferred date. In-person meetings are held Monday through Saturday in Dubai, where you can inspect machinery and review product specifications.'
+      a: 'We welcome serious corporate clients and private collectors to meet our technical team in person. Simply submit an appointment request through our Contact page or contact our direct client desk with your preferred date. In-person meetings are held Monday through Saturday in Dubai, where you can inspect machinery and review product specifications.'
     },
     {
       q: 'What is Caluanie Muelear Oxidize used for?',
