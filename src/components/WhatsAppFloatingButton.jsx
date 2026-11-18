@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function WhatsAppFloatingButton() {
   const [isHovered, setIsHovered] = useState(false);
-  const whatsappUrl = "https://wa.me/447700900077?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20your%20banknote%20conservation%20services,%20equipment,%20and%20chemical%20solutions.";
+  const whatsappUrl = "https://wa.me/447865039625?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20your%20banknote%20conservation%20services,%20equipment,%20and%20chemical%20solutions.";
 
   return (
     <div className="fixed bottom-6 right-6 z-30 flex items-center gap-3">

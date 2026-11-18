@@ -14,7 +14,7 @@ import {
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const whatsappUrl = "https://wa.me/447700900077?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20your%20products%20and%20services.";
+  const whatsappUrl = "https://wa.me/447865039625?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20your%20products%20and%20services.";
 
   return (
     <footer className="bg-slate-950 text-slate-300 border-t border-slate-800 text-sm">

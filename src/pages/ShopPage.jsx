@@ -126,7 +126,7 @@ export default function ShopPage() {
     const text = encodeURIComponent(
       `Hello Dubai Street Baron. I would like to order or request information about: "${productName}" (Price: ${price}). Please provide delivery timeline or appointment availability in Dubai.`
     );
-    return `https://wa.me/447700900077?text=${text}`;
+    return `https://wa.me/447865039625?text=${text}`;
   };
 
   return (
@@ -282,7 +282,7 @@ export default function ShopPage() {
             </div>
 
             <a
-              href="https://wa.me/447700900077?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20a%20bulk%20custom%20order%20for%20chemical%20solutions%20or%20cleaning%20machinery."
+              href="https://wa.me/447865039625?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20a%20bulk%20custom%20order%20for%20chemical%20solutions%20or%20cleaning%20machinery."
               target="_blank"
               rel="noopener noreferrer"
               className="h-11 px-6 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-sm tracking-wide shadow-lg shadow-amber-500/25 transition-all whitespace-nowrap shrink-0 flex items-center gap-2"

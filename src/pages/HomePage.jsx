@@ -21,7 +21,7 @@ import {
 import BanknoteEstimator from '../components/BanknoteEstimator';
 
 export default function HomePage() {
-  const whatsappUrl = "https://wa.me/447700900077?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20banknote%20conservation%20services,%20equipment,%20and%20chemical%20solutions.";
+  const whatsappUrl = "https://wa.me/447865039625?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20banknote%20conservation%20services,%20equipment,%20and%20chemical%20solutions.";
 
   const slides = [
     {
@@ -571,7 +571,7 @@ export default function HomePage() {
 
                 <div className="p-4 sm:p-5 pt-0">
                   <a
-                    href={`https://wa.me/447700900077?text=Hello%20Dubai%20Street%20Baron.%20I%20would%20like%20to%20order%20or%20inquire%20about:%20${encodeURIComponent(p.name)}`}
+                    href={`https://wa.me/447865039625?text=Hello%20Dubai%20Street%20Baron.%20I%20would%20like%20to%20order%20or%20inquire%20about:%20${encodeURIComponent(p.name)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs tracking-wide shadow-xs transition-all"

@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 
 export default function AdvisoryPage() {
-  const whatsappUrl = "https://wa.me/447700900077?text=Hello%20Global%20Liquidity%20Trade%20Desk,%20I%20am%20interested%20in%20Corporate%20Treasury%20and%20FX%20Advisory%20services.";
+  const whatsappUrl = "https://wa.me/447865039625?text=Hello%20Global%20Liquidity%20Trade%20Desk,%20I%20am%20interested%20in%20Corporate%20Treasury%20and%20FX%20Advisory%20services.";
 
   const pillars = [
     {

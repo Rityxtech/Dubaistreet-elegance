@@ -62,7 +62,7 @@ export default function Navbar() {
     { name: 'Contact & Appointments', path: '/contact', icon: CalendarCheck },
   ];
 
-  const whatsappUrl = "https://wa.me/447700900077?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20banknote%20conservation%20services,%20equipment,%20and%20chemical%20solutions.";
+  const whatsappUrl = "https://wa.me/447865039625?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20banknote%20conservation%20services,%20equipment,%20and%20chemical%20solutions.";
 
   return (
     <>

@@ -275,7 +275,7 @@ export default function MarketTicker({ showFullGrid = false }) {
               <span>Quotes reflect institutional wholesale tranches ($50k - $10M+). Spreads tighten automatically on ultra-high volumes.</span>
             </div>
             <a 
-              href="https://wa.me/447700900077?text=Hello%20Trade%20Desk,%20please%20provide%20a%20firm%20executable%20quote%20for%20my%20order."
+              href="https://wa.me/447865039625?text=Hello%20Trade%20Desk,%20please%20provide%20a%20firm%20executable%20quote%20for%20my%20order."
               target="_blank"
               rel="noopener noreferrer"
               className="text-amber-800 hover:text-amber-950 font-bold underline underline-offset-4 whitespace-nowrap self-start sm:self-auto"

@@ -35,7 +35,7 @@ export default function ContactPage() {
     setSubmitted(true);
   };
 
-  const whatsappInquiryUrl = `https://wa.me/447700900077?text=Hello%20Dubai%20Street%20Baron.%20I%20would%20like%20to%20schedule%20an%20appointment%20or%20inquire%20about%20${encodeURIComponent(formData.inquiryType)}.%20Name:%20${encodeURIComponent(formData.fullName || 'Client')}.`;
+  const whatsappInquiryUrl = `https://wa.me/447865039625?text=Hello%20Dubai%20Street%20Baron.%20I%20would%20like%20to%20schedule%20an%20appointment%20or%20inquire%20about%20${encodeURIComponent(formData.inquiryType)}.%20Name:%20${encodeURIComponent(formData.fullName || 'Client')}.`;
 
   return (
     <div className="min-h-screen pt-14 sm:pt-16 bg-white text-slate-900">

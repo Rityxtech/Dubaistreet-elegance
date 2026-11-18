@@ -17,7 +17,7 @@ import {
 import FaqAccordion from '../components/FaqAccordion';
 
 export default function ServicesPage() {
-  const whatsappUrl = "https://wa.me/447700900077?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20your%20banknote%20conservation%20services.";
+  const whatsappUrl = "https://wa.me/447865039625?text=Hello%20Dubai%20Street%20Baron,%20I%20would%20like%20to%20inquire%20about%20your%20banknote%20conservation%20services.";
 
   const services = [
     {
