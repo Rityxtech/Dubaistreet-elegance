@@ -40,21 +40,21 @@ export default function AdvisoryPage() {
       sector: 'Multinational FMCG & Manufacturing',
       headline: 'Insulating $120M Annual Raw Material Import Exposure',
       metrics: '14.8% Cost Slippage Prevented',
-      image: '/images/caluanie-muelear-oxidize.png',
+      image: '/images/caluanie-muelear-oxidize.webp',
       summary: 'A premier industrial manufacturing group operating across GCC and Southeast Asia faced recurring margin degradation due to sudden local currency volatility. We structured a 180-day deliverable forward hedge matrix with automated escrow replenishment, locking in procurement margins and eliminating import line stoppages.'
     },
     {
       sector: 'Energy & Infrastructure EPC',
       headline: 'Multi-Tranche Equipment Procurement Settlement',
       metrics: '22-Day Cycle Time Reduction',
-      image: '/images/banknote-counter-machine.png',
+      image: '/images/banknote-counter-machine.webp',
       summary: 'An international energy infrastructure consortium required milestone-based supplier payments across European and Asian machinery manufacturers. We established a multi-currency escrow facility with instantaneous SWIFT MT103 confirmation, saving 22 days per delivery cycle and eliminating bank dispute fees.'
     },
     {
       sector: 'Global Technology & Cross-Border Payroll',
       headline: 'Unified Treasury & Distributed Workforce Settlement',
       metrics: 'Zero Counterparty Default Rate',
-      image: '/images/banknote-conservation-inspection.png',
+      image: '/images/banknote-conservation-inspection.webp',
       summary: 'A fast-growing tech firm with engineering talent across 8 emerging markets struggled with high retail wire fees and erratic delivery times. Our advisory team implemented centralized netting and local wholesale conduits, slashing transaction overhead by 42%.'
     }
   ];
@@ -66,7 +66,7 @@ export default function AdvisoryPage() {
       <section className="relative overflow-hidden pt-8 pb-12 sm:pt-10 sm:pb-16 bg-slate-900 text-white border-b border-slate-200">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/dubai-street-baron-laboratory.png"
+            src="/images/dubai-street-baron-laboratory.webp"
             alt="Corporate Treasury & Executive Strategy Boardroom"
             className="w-full h-full object-cover opacity-70"
           />
@@ -245,7 +245,7 @@ export default function AdvisoryPage() {
             <div className="rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-2xl group">
               <div className="relative h-48 w-full overflow-hidden">
                 <img
-                  src="/images/caluanie-muelear-oxidize.png"
+                  src="/images/caluanie-muelear-oxidize.webp"
                   alt="Strategic Advisory Team"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

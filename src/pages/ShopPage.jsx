@@ -31,7 +31,7 @@ export default function ShopPage() {
       category: 'chemicals',
       name: 'SSD Universal Chemical Solution (Automatic Grade A)',
       badge: 'Bestseller',
-      image: '/images/aluanie-chemical-lab.png',
+      image: '/images/aluanie-chemical-lab.webp',
       price: '$1,850 / Liter',
       specs: ['Purity: 99.8% Certified', 'Automatic formulation', 'Safe on security threads', 'Global air freight'],
       description: 'Specialist universal chemical formulation engineered for the safe removal of anti-breeze dyes, stains, and environmental residues from genuine banknotes.'
@@ -41,7 +41,7 @@ export default function ShopPage() {
       category: 'caluanie',
       name: 'Caluanie Muelear Oxidize (Industrial Refined Supply)',
       badge: 'Certified Purity',
-      image: '/images/caluanie-muelear-oxidize.png',
+      image: '/images/caluanie-muelear-oxidize.webp',
       price: '$2,400 / Liter',
       specs: ['Density: 1.86 g/cm³', 'Refined raw material', 'Heavy oxidation removal', 'Factory sealed canister'],
       description: 'High-purity industrial Caluanie Muelear Oxidize used for deep-layer chemical oxidation breakdown, polymer modification, and banknote preservation.'
@@ -51,7 +51,7 @@ export default function ShopPage() {
       category: 'machines',
       name: 'Automated Multi-Tranche Ultrasonic Cleaning Machine (Model DSB-800)',
       badge: 'Commercial Grade',
-      image: '/images/banknote-counter-machine.png',
+      image: '/images/banknote-counter-machine.webp',
       price: '$8,500 / Unit',
       specs: ['Capacity: 50,000 notes/hr', 'Digital temperature control', 'Automated chemical cycle', 'Built-in dryer chamber'],
       description: 'Industrial-grade automated cleaning unit equipped with variable frequency ultrasonic cavitation, controlled chemical immersion baths, and gentle drying cycles.'
@@ -61,7 +61,7 @@ export default function ShopPage() {
       category: 'chemicals',
       name: 'Activation Powder & Vectrol Paste Compound',
       badge: 'Catalyst Formula',
-      image: '/images/ssd-extraction-powder.png',
+      image: '/images/ssd-extraction-powder.webp',
       price: '$650 / 500g',
       specs: ['Humine compound', 'Fast reaction activator', 'Zero residue', 'Vacuum sealed'],
       description: 'Essential catalyst formulation designed to activate and stabilize SSD chemical solutions during deep cleaning and stain extraction procedures.'
@@ -71,7 +71,7 @@ export default function ShopPage() {
       category: 'machines',
       name: 'Precision Handheld Laser De-Coating & Restoration Device',
       badge: 'High Precision',
-      image: '/images/banknote-counter-machine.png',
+      image: '/images/banknote-counter-machine.webp',
       price: '$4,200 / Unit',
       specs: ['Non-contact preservation', 'Adjustable wavelength', 'Rechargeable battery', 'Portable protective case'],
       description: 'Non-contact portable laser system for delicate targeted removal of protective surface films and ink deposits without chemical immersion.'
@@ -81,7 +81,7 @@ export default function ShopPage() {
       category: 'specimens',
       name: 'Saudi Arabian 500 Riyal Test Specimens (Batch of 20)',
       badge: 'Calibration Notes',
-      image: '/images/banknote-conservation-inspection.png',
+      image: '/images/banknote-conservation-inspection.webp',
       price: '$450 / Batch',
       specs: ['Genuine paper substrate', 'Security watermarks intact', 'Ideal for machine calibration', 'Verification certified'],
       description: 'Genuine currency specimen banknotes utilized by Asian and GCC technicians for chemical reaction testing and machine calibration.'
@@ -91,7 +91,7 @@ export default function ShopPage() {
       category: 'specimens',
       name: 'Singapore 50 Dollar Test Notes (Batch of 20)',
       badge: 'Polymer & Paper',
-      image: '/images/currency-inspection-glove.png',
+      image: '/images/currency-inspection-glove.webp',
       price: '$420 / Batch',
       specs: ['Polymer security window intact', 'Pre-conditioned for testing', 'Safe for test baths', 'Tamper-proof packaging'],
       description: 'Standardized Asian currency specimens (SGD 50) for testing solution exposure times and cleaning efficiency on modern polymer substrates.'
@@ -101,7 +101,7 @@ export default function ShopPage() {
       category: 'specimens',
       name: 'UAE 500 Dirham Calibration Notes (Batch of 15)',
       badge: 'GCC Regional',
-      image: '/images/banknote-conservation-inspection.png',
+      image: '/images/banknote-conservation-inspection.webp',
       price: '$480 / Batch',
       specs: ['Authentic SPARK security feature', 'Certified calibration batch', 'Ideal for ultrasonic testing', 'Discreet delivery'],
       description: 'Authentic UAE Dirham calibration specimens for regional financial laboratories and technical machine calibration across the Middle East & Asia.'
@@ -111,7 +111,7 @@ export default function ShopPage() {
       category: 'chemicals',
       name: 'Laboratory Neutralizing Rinse & Anti-Oxidation Wash',
       badge: 'Essential Step',
-      image: '/images/caluanie-muelear-oxidize.png',
+      image: '/images/caluanie-muelear-oxidize.webp',
       price: '$480 / Liter',
       specs: ['pH Neutral (7.0)', 'Prevents re-darkening', 'Restores crisp paper feel', 'Quick-drying alcohol base'],
       description: 'Finishing rinse solution formulated to neutralize chemical residue, stabilize banknote security fibers, and ensure long-term preservation.'
@@ -136,7 +136,7 @@ export default function ShopPage() {
       <section className="relative overflow-hidden pt-8 pb-12 sm:pt-10 sm:pb-16 bg-slate-950 text-white border-b border-slate-200">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/dubai-street-baron-laboratory.png"
+            src="/images/dubai-street-baron-laboratory.webp"
             alt="Dubai Street Baron Shop & Equipment Inventory"
             className="w-full h-full object-cover opacity-65"
           />

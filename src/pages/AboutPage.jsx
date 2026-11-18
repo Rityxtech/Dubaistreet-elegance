@@ -50,7 +50,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden pt-8 pb-12 sm:pt-10 sm:pb-16 bg-slate-950 text-white border-b border-slate-200">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/dubai-street-baron-laboratory.png"
+            src="/images/dubai-street-baron-laboratory.webp"
             alt="Dubai Street Baron Headquarters & Technical Team"
             className="w-full h-full object-cover opacity-65"
           />

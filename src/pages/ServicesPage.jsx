@@ -24,7 +24,7 @@ export default function ServicesPage() {
       id: 'assessment',
       title: '1. Banknote Condition Assessment',
       subtitle: 'Scientific evaluation of banknote substrates, ink stability, and stain depth',
-      image: '/images/banknote-conservation-inspection.png',
+      image: '/images/banknote-conservation-inspection.webp',
       description: 'Understand the exact physical condition of genuine banknotes affected by stains, moisture, discoloration, or environmental exposure. Our specialists analyze whether the currency can be safely restored without compromising delicate watermarks, security threads, holograms, or intaglio printing.',
       benefits: [
         'Non-destructive spectroscopic and chemical spot testing',
@@ -37,7 +37,7 @@ export default function ServicesPage() {
       id: 'preservation',
       title: '2. Banknote Preservation Guidance',
       subtitle: 'Best-practice conservation techniques for private collections and commercial holdings',
-      image: '/images/currency-inspection-glove.png',
+      image: '/images/currency-inspection-glove.webp',
       description: 'Learn responsible handling, storage, and preservation practices that prevent further deterioration. Cleaning is not appropriate for every note, especially where it risks damaging security features. We provide professional advice on environmental control, pH-neutral envelopes, and archival storage.',
       benefits: [
         'Safe handling protocols to avoid oil transfer and surface scuffing',
@@ -50,7 +50,7 @@ export default function ServicesPage() {
       id: 'equipment',
       title: '3. Professional Cleaning Equipment Supply',
       subtitle: 'Industrial-grade ultrasonic and automated digital cleaning machinery',
-      image: '/images/banknote-counter-machine.png',
+      image: '/images/banknote-counter-machine.webp',
       description: 'Explore high-precision cleaning machines designed for legitimate commercial maintenance and currency restoration applications. All equipment features automated digital cycle controls, variable-frequency ultrasonic transducers, and temperature-regulated drying chambers.',
       benefits: [
         'Commercial multi-tranche capacity handling up to 50,000 notes/hour',
@@ -63,7 +63,7 @@ export default function ServicesPage() {
       id: 'chemicals',
       title: '4. Chemical Solution Formulations & Consultation',
       subtitle: 'Certified SSD chemical solutions, activation catalysts, and Caluanie Muelear Oxidize',
-      image: '/images/caluanie-muelear-oxidize.png',
+      image: '/images/caluanie-muelear-oxidize.webp',
       description: 'Our technical team welcomes inquiries regarding chemical suitability, material safety data, and correct handling procedures. We supply certified SSD automatic solutions, activation powders, and high-purity Caluanie Muelear Oxidize with clear instructions.',
       benefits: [
         '99.8% purity certified laboratory-formulated chemical agents',
@@ -89,7 +89,7 @@ export default function ServicesPage() {
       id: 'support',
       title: '6. Dedicated Technical Support & Field Assistance',
       subtitle: 'Ongoing operational support and on-site technician dispatch',
-      image: '/images/ssd-extraction-powder.png',
+      image: '/images/ssd-extraction-powder.webp',
       description: 'From initial inquiry to project completion, our technical support team is available 24/7 via direct client messaging and phone. For high-volume clients, we offer on-site technician dispatch to assist with machine setup, chemical calibration, and staff operation.',
       benefits: [
         '24/7 direct encrypted messaging with senior technicians',
@@ -107,7 +107,7 @@ export default function ServicesPage() {
       <section className="relative overflow-hidden pt-8 pb-12 sm:pt-10 sm:pb-16 bg-slate-950 text-white border-b border-slate-200">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/dubai-street-baron-laboratory.png"
+            src="/images/dubai-street-baron-laboratory.webp"
             alt="Banknote Conservation Services"
             className="w-full h-full object-cover opacity-65"
           />

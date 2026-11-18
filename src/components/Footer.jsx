@@ -64,7 +64,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 rounded-full bg-gradient-to-br from-amber-400 to-amber-700 p-0.5 flex items-center justify-center shadow-md overflow-hidden shrink-0">
                 <img 
-                  src="/dubailogo.png" 
+                  src="/dubailogo.webp" 
                   alt="Dubai Street Baron Logo" 
                   className="w-full h-full object-cover rounded-full bg-slate-950" 
                 />

@@ -26,7 +26,7 @@ export default function HomePage() {
   const slides = [
     {
       id: 1,
-      image: '/images/banknote-conservation-inspection.png',
+      image: '/images/banknote-conservation-inspection.webp',
       badge: 'Genuine Currency Conservation',
       titleLead: 'Banknote Conservation ',
       titleGold: '& Cleaning Solutions',
@@ -39,7 +39,7 @@ export default function HomePage() {
     },
     {
       id: 2,
-      image: '/images/caluanie-muelear-oxidize.png',
+      image: '/images/caluanie-muelear-oxidize.webp',
       badge: 'Certified Chemical Solutions',
       titleLead: 'SSD Chemical Solutions ',
       titleGold: '& Caluanie Oxidize',
@@ -52,7 +52,7 @@ export default function HomePage() {
     },
     {
       id: 3,
-      image: '/images/dubai-street-baron-laboratory.png',
+      image: '/images/dubai-street-baron-laboratory.webp',
       badge: 'Laboratory Systems & Supply',
       titleLead: 'Specialist Extraction ',
       titleGold: '& Laboratory Systems',
@@ -65,7 +65,7 @@ export default function HomePage() {
     },
     {
       id: 4,
-      image: '/images/banknote-counter-machine.png',
+      image: '/images/banknote-counter-machine.webp',
       badge: 'Commercial Machinery Supply',
       titleLead: 'Automated Banknote ',
       titleGold: 'Counting Machinery',
@@ -82,6 +82,14 @@ export default function HomePage() {
   const [isPaused, setIsPaused] = useState(false);
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchEndX, setTouchEndX] = useState(0);
+
+  // Pre-cache all slide images in browser memory on initial render
+  useEffect(() => {
+    slides.forEach((s) => {
+      const img = new Image();
+      img.src = s.image;
+    });
+  }, []);
 
   useEffect(() => {
     if (isPaused) return;
@@ -120,28 +128,28 @@ export default function HomePage() {
     {
       name: 'SSD Universal Chemical Solution (Grade A Auto)',
       category: 'Chemical Formulations',
-      image: '/images/aluanie-chemical-lab.png',
+      image: '/images/aluanie-chemical-lab.webp',
       price: '$1,850 / Liter',
       desc: 'Formulated for gentle, complete dissolution of anti-breeze coatings and environmental stains on legal tender paper.'
     },
     {
       name: 'Caluanie Muelear Oxidize (Industrial Refined)',
       category: 'Industrial Oxidizers',
-      image: '/images/caluanie-muelear-oxidize.png',
+      image: '/images/caluanie-muelear-oxidize.webp',
       price: '$2,400 / Liter',
       desc: 'High-purity industrial Caluanie used for deep chemical oxidation breakdown and surface polymer decalcification.'
     },
     {
       name: 'Automated Multi-Tranche Ultrasonic Cleaner (DSB-800)',
       category: 'Machinery',
-      image: '/images/banknote-counter-machine.png',
+      image: '/images/banknote-counter-machine.webp',
       price: '$8,500 / Unit',
       desc: 'Digital multi-bath ultrasonic cleaning unit with automated fluid recycling and temperature-regulated drying.'
     },
     {
       name: 'Activation Powder & Vectrol Paste Catalyst',
       category: 'Activator Compounds',
-      image: '/images/ssd-extraction-powder.png',
+      image: '/images/ssd-extraction-powder.webp',
       price: '$650 / 500g',
       desc: 'High-grade catalyst compound essential for activating SSD solutions during intensive banknote cleaning cycles.'
     }
@@ -165,13 +173,16 @@ export default function HomePage() {
           return (
             <div
               key={slide.id}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
                 isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
               }`}
             >
               <img
                 src={slide.image}
                 alt={`${slide.titleLead}${slide.titleGold}`}
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchPriority={index === 0 ? "high" : "auto"}
+                decoding={index === 0 ? "sync" : "async"}
                 className={`w-full h-full object-cover object-center transition-transform duration-[7000ms] ease-out ${
                   isActive ? 'scale-105' : 'scale-100'
                 }`}
@@ -393,8 +404,9 @@ export default function HomePage() {
               <div>
                 <div className="relative h-48 w-full overflow-hidden">
                   <img
-                    src="/images/banknote-counter-machine.png"
+                    src="/images/banknote-counter-machine.webp"
                     alt="Cleaning Machinery & Counter Systems"
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
@@ -439,8 +451,9 @@ export default function HomePage() {
               <div>
                 <div className="relative h-48 w-full overflow-hidden">
                   <img
-                    src="/images/caluanie-muelear-oxidize.png"
+                    src="/images/caluanie-muelear-oxidize.webp"
                     alt="Chemical Solutions"
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
@@ -485,8 +498,9 @@ export default function HomePage() {
               <div>
                 <div className="relative h-48 w-full overflow-hidden">
                   <img
-                    src="/images/banknote-conservation-inspection.png"
+                    src="/images/banknote-conservation-inspection.webp"
                     alt="Dubai Appointments & Banknote Verification"
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />

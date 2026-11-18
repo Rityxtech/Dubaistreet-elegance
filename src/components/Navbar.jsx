@@ -79,7 +79,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-2.5 sm:gap-3 shrink-0 group focus:outline-none">
             <div className="relative flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 p-0.5 shadow-sm group-hover:scale-105 transition-transform duration-300 shrink-0">
               <img 
-                src="/dubailogo.png" 
+                src="/dubailogo.webp" 
                 alt="Dubai Street Baron Logo" 
                 className="w-full h-full object-cover rounded-full bg-slate-950" 
               />
