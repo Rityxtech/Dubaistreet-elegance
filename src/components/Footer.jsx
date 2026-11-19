@@ -112,6 +112,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/business-financing" className="text-slate-400 hover:text-white transition-colors">
+                  Business Loans & Credit
+                </Link>
+              </li>
+              <li>
+                <Link to="/currency-exchange" className="text-slate-400 hover:text-white transition-colors">
+                  Currency Exchange
+                </Link>
+              </li>
+              <li>
                 <Link to="/about" className="text-slate-400 hover:text-white transition-colors">
                   About Us
                 </Link>
@@ -131,9 +141,10 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs text-slate-400">
               <li>Banknote Condition Assessment</li>
-              <li>Preservation & Handling Guidance</li>
               <li>Commercial Cleaning Equipment</li>
               <li>Chemical Solution Formulations</li>
+              <li>Business Loans & Credit Facilities</li>
+              <li>Wholesale Currency Exchange</li>
               <li>In-Person Dubai Consultations</li>
               <li>On-Site Technician Support</li>
             </ul>

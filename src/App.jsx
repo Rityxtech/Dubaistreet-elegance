@@ -8,6 +8,8 @@ import WhatsAppFloatingButton from './components/WhatsAppFloatingButton';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import ShopPage from './pages/ShopPage';
+import BusinessFinancingPage from './pages/BusinessFinancingPage';
+import CurrencyExchangePage from './pages/CurrencyExchangePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 
@@ -21,9 +23,12 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/shop" element={<ShopPage />} />
+          <Route path="/business-financing" element={<BusinessFinancingPage />} />
+          <Route path="/business-loans" element={<Navigate to="/business-financing" replace />} />
+          <Route path="/currency-exchange" element={<CurrencyExchangePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/advisory" element={<Navigate to="/services" replace />} />
+          <Route path="/advisory" element={<Navigate to="/currency-exchange" replace />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

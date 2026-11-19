@@ -97,6 +97,34 @@ export default function ServicesPage() {
         'Field technician availability for on-site client assistance',
         'Continuous after-sales support and replacement consumable supply'
       ]
+    },
+    {
+      id: 'financing',
+      title: '7. Commercial Business Loans for Existing Owners',
+      subtitle: 'Working capital credit lines, machinery Capex loans, and trade liquidity',
+      image: '/images/dubai-street-baron-laboratory.webp',
+      link: '/business-financing',
+      description: 'Custom commercial debt structuring for established businesses and enterprise owners across the GCC and Asia. From short-term working capital and supply procurement facilities to machinery asset financing for automated cleaning and laboratory systems.',
+      benefits: [
+        'Credit facilities from $50,000 to $2,500,000+ with 48-hour term sheets',
+        'Equipment financing covering up to 90% of machinery invoice value',
+        'Non-dilutive capital preserving 100% of your equity ownership',
+        'Direct bank wire disbursement in AED, USD, SAR, or EUR'
+      ]
+    },
+    {
+      id: 'exchange',
+      title: '8. Wholesale Foreign Currency Exchange',
+      subtitle: 'Spot foreign exchange, deliverable forward contracts, and physical banknote tranches',
+      image: '/images/banknote-conservation-inspection.webp',
+      link: '/currency-exchange',
+      description: 'Institutional-grade wholesale currency conversion, forward hedging, and physical cash exchange in Dubai. Covering major Asian, GCC, and global currency pairs with tight spreads and real-time gross settlement via central bank conduits.',
+      benefits: [
+        'Deliverable spot conversions with same-day gross settlement (T+0)',
+        'FX forward contracts locking rates up to 12 months ahead',
+        'Supported pairs: AED, SAR, QAR, SGD, HKD, JPY, CNY, USD, EUR, GBP',
+        'Physical banknote verification and armored CIT delivery in Dubai'
+      ]
     }
   ];
 
@@ -188,6 +216,16 @@ export default function ServicesPage() {
                     <MessageSquare className="w-4 h-4 text-slate-950" />
                     <span>Request Service Quotation</span>
                   </a>
+
+                  {svc.link && (
+                    <Link
+                      to={svc.link}
+                      className="h-10 px-5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs tracking-wide flex items-center gap-2"
+                    >
+                      <span>Explore Dedicated Page</span>
+                      <ArrowRight className="w-3.5 h-3.5 text-amber-400" />
+                    </Link>
+                  )}
 
                   <Link
                     to="/contact"

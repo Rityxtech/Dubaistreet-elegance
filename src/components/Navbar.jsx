@@ -10,7 +10,9 @@ import {
   Building2, 
   CalendarCheck, 
   MapPin,
-  MessageSquare
+  MessageSquare,
+  Landmark,
+  ArrowLeftRight
 } from 'lucide-react';
 
 export default function Navbar() {
@@ -58,6 +60,8 @@ export default function Navbar() {
     { name: 'Home', path: '/', icon: Home },
     { name: 'Our Services', path: '/services', icon: Wrench },
     { name: 'Shop & Solutions', path: '/shop', icon: ShoppingBag },
+    { name: 'Business Loans', path: '/business-financing', icon: Landmark },
+    { name: 'Currency Exchange', path: '/currency-exchange', icon: ArrowLeftRight },
     { name: 'About Us', path: '/about', icon: Building2 },
     { name: 'Contact & Appointments', path: '/contact', icon: CalendarCheck },
   ];
@@ -101,14 +105,14 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">
+          <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1.5 shrink-0">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
               return (
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`relative px-2.5 xl:px-3.5 py-1.5 text-xs xl:text-sm font-bold whitespace-nowrap rounded-lg transition-all duration-200 shrink-0 ${
+                  className={`relative px-2 xl:px-3 py-1.5 text-xs xl:text-sm font-bold whitespace-nowrap rounded-lg transition-all duration-200 shrink-0 ${
                     isActive
                       ? 'text-amber-800 bg-amber-50/80'
                       : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70'
@@ -116,7 +120,7 @@ export default function Navbar() {
                 >
                   {link.name}
                   {isActive && (
-                    <span className="absolute bottom-0 left-2.5 right-2.5 h-0.5 bg-gradient-to-r from-amber-500 to-amber-700 rounded-full" />
+                    <span className="absolute bottom-0 left-2 right-2 h-0.5 bg-gradient-to-r from-amber-500 to-amber-700 rounded-full" />
                   )}
                 </Link>
               );

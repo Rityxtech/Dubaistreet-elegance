@@ -16,7 +16,9 @@ import {
   Package,
   Award,
   Lock,
-  MapPin
+  MapPin,
+  Landmark,
+  ArrowLeftRight
 } from 'lucide-react';
 import BanknoteEstimator from '../components/BanknoteEstimator';
 
@@ -541,12 +543,140 @@ export default function HomePage() {
             </div>
 
           </div>
+
+          {/* TWO EXPANDED ENTERPRISE SERVICES: LOANS & CURRENCY EXCHANGE */}
+          <div className="mt-12 sm:mt-16 pt-10 sm:pt-14 border-t border-slate-200">
+            <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-1">
+                Enterprise Capital &amp; Treasury
+              </span>
+              <h3 className="text-xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                Business Loans &amp; Institutional Currency Exchange
+              </h3>
+              <p className="text-slate-600 text-xs sm:text-sm mt-1.5">
+                Dedicated non-dilutive credit facilities for established enterprise owners and wholesale cross-border currency execution.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+              
+              {/* Service Card 1: Business Loans */}
+              <div className="p-6 sm:p-8 rounded-3xl bg-slate-950 text-white border border-slate-800 shadow-xl flex flex-col justify-between relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
+                
+                <div className="space-y-4 relative z-10">
+                  <div className="flex items-center justify-between">
+                    <div className="w-12 h-12 rounded-2xl bg-amber-400/15 border border-amber-400/30 flex items-center justify-center text-amber-300">
+                      <Landmark className="w-6 h-6" />
+                    </div>
+                    <span className="px-3 py-1 rounded-full bg-amber-400/15 text-amber-300 border border-amber-400/30 text-[11px] font-bold">
+                      $50K – $2.5M+ Credit
+                    </span>
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-bold text-white tracking-tight">
+                      Loans to Existing Business Owners
+                    </h4>
+                    <p className="text-xs text-amber-400 font-semibold mt-0.5">
+                      Working Capital &amp; Equipment Capex Facilities
+                    </p>
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    Bespoke non-dilutive debt financing for established companies across Dubai, the GCC, and Asia to acquire cleaning machinery, fund inventory, and bridge trade receivables.
+                  </p>
+
+                  <div className="space-y-2 pt-2 border-t border-slate-800 text-xs text-slate-300">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      <span>Rapid 48-hour credit evaluation window</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      <span>Finance up to 90% of equipment invoice value</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      <span>Zero equity dilution &amp; flexible tenure (6 to 36 mo)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-6 relative z-10">
+                  <Link
+                    to="/business-financing"
+                    className="w-full flex items-center justify-center gap-2 py-3 px-5 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs sm:text-sm tracking-wide shadow-md transition-all active:scale-[0.98]"
+                  >
+                    <span>Explore Business Loans</span>
+                    <ArrowRight className="w-4 h-4 text-slate-950" />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Service Card 2: Currency Exchange */}
+              <div className="p-6 sm:p-8 rounded-3xl bg-slate-950 text-white border border-slate-800 shadow-xl flex flex-col justify-between relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
+
+                <div className="space-y-4 relative z-10">
+                  <div className="flex items-center justify-between">
+                    <div className="w-12 h-12 rounded-2xl bg-amber-400/15 border border-amber-400/30 flex items-center justify-center text-amber-300">
+                      <ArrowLeftRight className="w-6 h-6" />
+                    </div>
+                    <span className="px-3 py-1 rounded-full bg-amber-400/15 text-amber-300 border border-amber-400/30 text-[11px] font-bold">
+                      Tight Institutional Spreads
+                    </span>
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-bold text-white tracking-tight">
+                      Exchange of Foreign Currencies
+                    </h4>
+                    <p className="text-xs text-amber-400 font-semibold mt-0.5">
+                      Spot Liquidity, Forward Hedging &amp; Banknotes
+                    </p>
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    Wholesale foreign exchange and deliverable cross-border settlements for corporate treasuries, commercial importers, and high-volume cash holders in Dubai.
+                  </p>
+
+                  <div className="space-y-2 pt-2 border-t border-slate-800 text-xs text-slate-300">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      <span>Deliverable spot conversion via SWIFT &amp; Central Bank conduits</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      <span>FX forward contracts locking rates up to 12 months</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      <span>AED, SAR, QAR, SGD, HKD, JPY, CNY, USD, EUR, GBP</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-6 relative z-10">
+                  <Link
+                    to="/currency-exchange"
+                    className="w-full flex items-center justify-center gap-2 py-3 px-5 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-sm font-extrabold text-xs sm:text-sm tracking-wide shadow-md transition-all active:scale-[0.98]"
+                  >
+                    <span>Explore Currency Exchange</span>
+                    <ArrowRight className="w-4 h-4 text-amber-400" />
+                  </Link>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </section>
 
       {/* FULL-WIDTH INTERACTIVE BANKNOTE ESTIMATOR */}
-      <section className="py-8 sm:py-10 lg:py-12 bg-slate-50/70 border-y border-slate-200/80">
-        <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+      <section className="py-5 sm:py-8 lg:py-10 bg-slate-50/70 border-y border-slate-200/80">
+        <div className="w-full max-w-[96rem] mx-auto px-3.5 sm:px-6 lg:px-8 xl:px-12">
           <BanknoteEstimator />
         </div>
       </section>
